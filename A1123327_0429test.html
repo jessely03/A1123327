@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded PlotDB Charts</title>
+    <title>Two Embedded Charts</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,11 +26,31 @@
         h1 {
             color: #333;
         }
+        .chart-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .chart-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
     </style>
 </head>
 <body>
-    <h1>Embedded PlotDB Charts</h1>
-    <!-- First Chart -->
-    <iframe src="https://plotdb.io/v/chart/37336" title="PlotDB Chart 37336"></iframe>
-    <!-- Second
-
+    <h1>Two Embedded Charts</h1>
+
+    <div class="chart-container">
+        <div class="chart-title">Chart 1: From PlotDB (ID: 37336)</div>
+        <iframe src="https://plotdb.io/v/chart/37336" title="PlotDB Chart"></iframe>
+    </div>
+
+    <div class="chart-container">
+        <div class="chart-title">Chart 2: From PlotDB (ID: 37364)</div>
+        <iframe src="https://plotdb.com/chart/37364/v2" title="PlotDB Chart"></iframe>
+    </div>
+</body>
+</html>
