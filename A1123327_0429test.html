@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Page</title>
+    <title>Embedded PlotDB Chart</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
         }
-        h1 {
-            color: #4CAF50;
-        }
-        p {
-            font-size: 16px;
+        iframe {
+            border: none;
+            width: 90%;
+            height: 90%;
+            max-width: 1200px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My HTML Page</h1>
-    <p>This is a simple HTML file to get started. You can add more content, like images, links, or videos, as you like!</p>
-    <a href="https://example.com" target="_blank">Visit Example.com</a>
+    <iframe src="https://plotdb.io/v/chart/37336" title="PlotDB Chart"></iframe>
 </body>
 </html>
