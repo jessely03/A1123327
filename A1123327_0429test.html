@@ -33,29 +33,50 @@
             align-items: center;
             gap: 10px;
         }
-        .chart-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #555;
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+        }
+        figcaption, p {
+            font-size: 16px;
+            font-style: italic;
+            color: #777;
+            text-align: center;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <h1>高雄市人口</h1>
+    <p>
+        地圖上的城市可查看每個村莊的詳細資訊。地圖上的顏色依高雄市地區老年人口數量的最小值、一分位數、二分位數、平均值、三分位數、最大值排列。
+        這三張地圖分別描繪了65-100歲、65-80歲和80-100歲人口的分佈。可以看出，65-79歲年齡層的老年人口數量遠遠多於80歲以上的老年人口數量，
+        這是一個很常見的情況，因為人均壽命在80歲左右。隨著年齡的增長，死亡率自然會增加，導致老年人口數量下降。
+        這種模式反映了高雄等城市地區普遍存在的人口老化動態。
+    </p>
 
     <div class="chart-container">
-        <div class="chart-title">Chart 1: 65-100歲 From PlotDB (ID: 37336)</div>
-        <iframe src="https://plotdb.io/v/chart/37336" title="PlotDB Chart"></iframe>
+        <figure>
+            <iframe src="https://plotdb.io/v/chart/37336" title="PlotDB Chart"></iframe>
+            <figcaption>Chart 1: 65-100歲 From PlotDB (ID: 37336)</figcaption>
+        </figure>
     </div>
 
     <div class="chart-container">
-        <div class="chart-title">Chart 2: From PlotDB 65-80歲 (ID: 37391)</div>
-        <iframe src="https://plotdb.io/v/chart/37391" title="PlotDB Chart"></iframe>
+        <figure>
+            <iframe src="https://plotdb.io/v/chart/37391" title="PlotDB Chart"></iframe>
+            <figcaption>Chart 2: From PlotDB 65-80歲 (ID: 37391)</figcaption>
+        </figure>
     </div>
 
     <div class="chart-container">
-        <div class="chart-title">Chart 3: 80-100歲 From PlotDB (ID: 37364)</div>
-        <iframe src="https://plotdb.io/v/chart/37364" title="PlotDB Chart"></iframe>
+        <figure>
+            <iframe src="https://plotdb.io/v/chart/37364" title="PlotDB Chart"></iframe>
+            <figcaption>Chart 3: 80-100歲 From PlotDB (ID: 37364)</figcaption>
+        </figure>
     </div>
 </body>
 </html>
