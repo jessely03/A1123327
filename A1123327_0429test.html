@@ -23,6 +23,12 @@
             height: 400px;
             max-width: 1200px;
         }
+        img {
+            max-width: 90%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
         h1 {
             color: #333;
         }
@@ -38,11 +44,25 @@
             font-weight: bold;
             color: #555;
         }
+        .photo-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .photo-caption {
+            font-size: 16px;
+            font-style: italic;
+            color: #777;
+            text-align: center;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>高雄市人口</h1>
- <p>
+    <p>
         地圖上的城市可查看每個村莊的詳細資訊。地圖上的顏色依高雄市地區老年人口數量的最小值、一分位數、二分位數、平均值、三分位數、最大值排列。
         這三張地圖分別描繪了65-100歲、65-80歲和80-100歲人口的分佈。可以看出，65-79歲年齡層的老年人口數量遠遠多於80歲以上的老年人口數量，
         這是一個很常見的情況，因為人均壽命在80歲左右。隨著年齡的增長，死亡率自然會增加，導致老年人口數量下降。
@@ -62,6 +82,18 @@
     <div class="chart-container">
         <div class="chart-title">Chart 3: 80-100歲 From PlotDB (ID: 37364)</div>
         <iframe src="https://plotdb.io/v/chart/37364" title="PlotDB Chart"></iframe>
+    </div>
+
+    <!-- New Photo Section -->
+    <div class="photo-container">
+        <img src="https://via.placeholder.com/1200x600" alt="Sample Image">
+        <div class="photo-caption">
+            高雄市數據顯示，65至79歲高齡人口數遠高於80歲以上高齡人口數量，反映出人口結構普遍呈現平均壽命在80歲左右，且死亡率隨年齡增長而上升的現象。
+            基於此，計劃為那些仍然具有基本行動能力但在不平坦路面上行走困難的老年人建造一個老年友好型社區中心。該中心將結合社交活動和數位學習，
+            以改善心理健康並鼓勵社交互動。考慮到高雄許多老年人覺得科技很難或令人生畏，學習方式設計得簡單有趣，例如漫畫和小說閱讀俱樂部，
+            以建立關於手機使用、資訊搜尋和預防詐欺的溝通和實用數位課程。並會透過高雄風格的故事或插畫融入當地文化，增加親近感及學習興趣。
+            此外，學習崗位也將設置在老年人經常出入的策略位置，並實行「父母教導父母」的方式，營造舒適、互相支持的學習氛圍。
+        </div>
     </div>
 </body>
 </html>
